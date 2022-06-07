@@ -11,8 +11,8 @@ command_not_found_handler() {
     printf 'Do you want to Install package %s? (y/N) ' $pkgname
     if read -q "choice? "; then
     		echo
-    		echo "Executing command: pamac install $pkgname"
-            pamac install $pkgname
+    		echo "Executing command: pacman -S $pkgname"
+            pacman -S $pkgname
     else
     		echo " "
     fi

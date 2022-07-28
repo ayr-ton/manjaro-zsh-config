@@ -8,3 +8,7 @@ fi
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
+# Use local configuration if exists
+if [[ -e $HOME/.zshrc.local ]]; then
+  source $HOME/.zshrc.local
+fi
